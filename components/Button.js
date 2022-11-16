@@ -1,8 +1,8 @@
 import styles from '../styles/Home.module.css'
 
-const Button = ({color,text}) => {
+const Button = ({color,text,changeVisible}) => {
   return (
-    <button style={{background:color}} className={styles.btn}>{text}</button>
+    <button onClick={changeVisible} style={{background:color}} className='btn'>{text}</button>
 
   )
 }
